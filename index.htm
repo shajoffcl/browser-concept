@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Browser Learning</title>
+  </head>
+  <body>
+    <div class="container" id="generate-text" type="div">
+      <h1 id="green">WELCOME</h1>
+      <button class="btn">Click here to generate Text</button>
+    </div>
+
+    <div class="container" id="menu">
+      <button data-action="save">Save</button>
+      <button data-action="load">Load</button>
+      <button data-action="search">Search</button>
+    </div>
+
+    <div class="container" id="toggle-form">
+      <button data-toggle-id="subscribe-mail">
+        Show the subscription form
+      </button>
+      <form id="subscribe-mail" hidden>
+        Your mail:
+        <br /><input type="email" />
+      </form>
+    </div>
+
+    <div class="container" id="input-field">
+      <input value="Focus works" onfocus="this.value=''" />
+      <input
+        onmousedown="return false"
+        onfocus="this.value=''"
+        value="Click me"
+      />
+      <p>Right-click here for the document context menu</p>
+      <button id="elem">Right-click here for the button context menu</button>
+    </div>
+
+    <div class="container" id="events">
+      <button id="evt">Click here</button>
+    </div>
+  </body>
+  <script src="main.js"></script>
+  <script src="class.js"></script>
+  <script src="subscription.js"></script>
+  <script src="events.js"></script>
+</html>
